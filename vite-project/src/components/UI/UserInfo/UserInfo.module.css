@@ -1,0 +1,84 @@
+.userItem {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 5px solid #3498db;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.userItem:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.userItem ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.userItem li {
+  padding: 8px 0;
+  color: #2c3e50;
+  font-size: 1rem;
+  border-bottom: 1px dashed #ecf0f1;
+}
+
+.userItem li:last-child {
+  border-bottom: none;
+}
+
+.userItem li strong {
+  color: #3498db;
+  font-weight: 600;
+  min-width: 80px;
+  display: inline-block;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-left: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 80px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.button:first-child {
+  background-color: #f39c12;
+  color: white;
+}
+
+.button:first-child:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(243, 156, 18, 0.3);
+}
+
+.button:last-child {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.button:last-child:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
